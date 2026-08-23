@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCSS GaLEADS Growth Measure Hub</title>
+<style>
+  :root{
+    --royal:#3347B4; --royal-dark:#222C6B; --royal-mid:#4A5CC5;
+    --scarlet:#F12025; --silver:#B8BABA; --ink:#1F2430; --gray:#5A6070;
+    --tint:#EEF1FB; --line:#DDE1EE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"Segoe UI",-apple-system,Helvetica,Arial,sans-serif; color:var(--ink); background:#fff; line-height:1.5;}
+  .wrap{max-width:960px; margin:0 auto; padding:28px 18px 44px;}
+
+  /* ---------- Masthead ---------- */
+  .mast{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+  .mast img{height:88px; width:auto;}
+  .m-word{font-family:Georgia,"Times New Roman",serif; font-weight:700; color:var(--royal); font-size:clamp(26px,5vw,40px); letter-spacing:1px;}
+  .m-sub{color:var(--royal); font-size:clamp(11px,2.2vw,15px); letter-spacing:4px;}
+  .m-tag{width:100%; margin-top:14px; font-size:clamp(16px,3vw,21px); font-weight:700; color:var(--ink);}
+  .m-intro{width:100%; margin-top:6px; color:var(--gray); font-size:15px; max-width:760px;}
+  .mast-rule{border:none; border-top:1px solid var(--line); margin:22px 0 26px;}
+
+  /* ---------- Cards ---------- */
+  .cards{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+  a.card{
+    display:block; text-decoration:none; color:var(--ink);
+    border:1.5px solid var(--line); border-radius:14px; padding:20px;
+    background:#fff; transition:border-color .15s ease, transform .15s ease;
+  }
+  @media (prefers-reduced-motion: reduce){ a.card{transition:none;} }
+  a.card:hover, a.card:focus-visible{border-color:var(--royal); transform:translateY(-2px); outline:none;}
+  a.card:focus-visible{box-shadow:0 0 0 3px var(--tint);}
+  .c-kicker{font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--scarlet); margin-bottom:8px;}
+  .c-title{font-family:Georgia,serif; font-size:20px; font-weight:700; color:var(--royal-dark); margin-bottom:8px;}
+  .c-desc{font-size:14px; color:var(--gray);}
+  .c-go{margin-top:12px; font-size:14px; font-weight:700; color:var(--royal);}
+  a.card.placeholder{border-style:dashed; opacity:.75;}
+  a.card.placeholder .c-go{color:var(--gray);}
+
+  /* ---------- Quick reference ---------- */
+  h2{font-family:Georgia,serif; color:var(--royal-dark); font-size:24px; margin:36px 0 14px;}
+  .ref{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+  .ref-box{background:var(--tint); border-radius:14px; padding:18px 20px; font-size:14px;}
+  .ref-box h3{font-size:15px; color:var(--royal); margin-bottom:8px;}
+  .ref-box p{margin-bottom:8px;}
+  .ref-box em{color:var(--gray);}
+  .bands{width:100%; border-collapse:collapse; font-size:13.5px;}
+  .bands td{padding:6px 8px; border-bottom:1px solid #fff;}
+  .bands td:first-child{font-weight:700;}
+  .dot{display:inline-block; width:11px; height:11px; border-radius:3px; margin-right:7px; vertical-align:-1px;}
+
+  footer{margin-top:36px; font-size:12.5px; color:var(--gray); border-top:1px solid var(--line); padding-top:14px;}
+  footer a{color:var(--royal);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mast">
+    <img src="OC_Interlocking_clean.png" alt="Oglethorpe County interlocking OC logo">
+    <div>
+      <div class="m-word">OGLETHORPE</div>
+      <div class="m-sub">COUNTY SCHOOL SYSTEM</div>
+    </div>
+    <div class="m-tag">GaLEADS Growth Measure Hub</div>
+    <p class="m-intro">Everything OCSS teachers and leaders need to write, submit, and score growth measures
+    for the 2026&ndash;27 GaLEADS ELEVATE cycle &mdash; in one place.</p>
+  </div>
+  <hr class="mast-rule">
+
+  <div class="cards">
+    <a class="card" href="calculator.html">
+      <div class="c-kicker">Tool</div>
+      <div class="c-title">Growth Measure Calculator</div>
+      <div class="c-desc">Enter your target and result to see your progress percentage and eHub score band &mdash; Exceeded, Met, Progressing, or Did Not Meet. Works for proficiency and growth goals.</div>
+      <div class="c-go">Open the calculator &rarr;</div>
+    </a>
+
+    <a class="card" href="https://forms.cloud.microsoft/r/U70gTYQKyY" target="_blank" rel="noopener">
+      <div class="c-kicker">Draft &amp; Approve</div>
+      <div class="c-title">Goal Builder Form</div>
+      <div class="c-desc">Outline your growth measure step by step and submit it for your administrator&rsquo;s feedback before entering it in eHub. One form for all three schools &mdash; pick yours in the first question.</div>
+      <div class="c-go">Open the form &rarr;</div>
+    </a>
+
+    <a class="card" href="GaLEADS_eHub_Preliminary_Meeting_Guide.pdf" target="_blank" rel="noopener">
+      <div class="c-kicker">Quick Guide</div>
+      <div class="c-title">eHub Preliminary Meeting Guide</div>
+      <div class="c-desc">Step-by-step directions for completing Orientation, Assurances, your Growth Measure, and your PGAP inside the GaLEADS eHub platform.</div>
+      <div class="c-go">Open the guide &rarr;</div>
+    </a>
+
+    <a class="card" href="GaLEADS_Assign_School_Growth_Measure_Guide.pdf" target="_blank" rel="noopener">
+      <div class="c-kicker">Admin</div>
+      <div class="c-title">Assign the School Growth Measure</div>
+      <div class="c-desc">For principals: how to enter the School Growth Measure in eHub and assign it to all staff. Remember &mdash; once assigned, it cannot be modified.</div>
+      <div class="c-go">Open the guide &rarr;</div>
+    </a>
+  </div>
+
+  <h2>Quick reference</h2>
+  <div class="ref">
+    <div class="ref-box">
+      <h3>Goal templates</h3>
+      <p><strong>Proficiency:</strong> By [date], [X% or number] will [target action], as measured by [data source]. <em>No baseline needed.</em></p>
+      <p><strong>Growth:</strong> By [date], [action] will increase/decrease from [baseline] to [target], as measured by [data source]. <em>Baseline required.</em></p>
+      <p><strong>Custom:</strong> your own words, 250 characters in eHub &mdash; held to the same checklist.</p>
+    </div>
+    <div class="ref-box">
+      <h3>Strong-goal checklist</h3>
+      <p>&#10003; Baseline is clear (growth goals)<br>
+      &#10003; Target is a specific number<br>
+      &#10003; Results available by end of Q3<br>
+      &#10003; Goal stretches performance &mdash; ambitious AND attainable</p>
+      <p><em>Local data only &mdash; state assessment data may not be used.</em></p>
+    </div>
+    <div class="ref-box">
+      <h3>How goals are scored</h3>
+      <table class="bands">
+        <tr><td><span class="dot" style="background:var(--royal-dark)"></span>Exceeded (3)</td><td>95%+ of target</td></tr>
+        <tr><td><span class="dot" style="background:var(--royal-mid)"></span>Met (2)</td><td>87&ndash;94%</td></tr>
+        <tr><td><span class="dot" style="background:var(--silver)"></span>Progressing (1)</td><td>75&ndash;86%</td></tr>
+        <tr><td><span class="dot" style="background:var(--scarlet)"></span>Did Not Meet (0)</td><td>Below 75%</td></tr>
+      </table>
+      <p style="margin-top:8px"><em>Rated on progress toward the goal, not the raw result. Growth, not perfection, is the goal.</em></p>
+    </div>
+  </div>
+
+  <footer>
+    Oglethorpe County School System &middot; GaLEADS ELEVATE 2026&ndash;27 &middot;
+    eHub support: <a href="mailto:esdsupport@doe.k12.ga.us">esdsupport@doe.k12.ga.us</a> &middot;
+    Questions about growth measures: contact your school administrator or Dr.&nbsp;Synan.
+  </footer>
+</div>
+</body>
+</html>
